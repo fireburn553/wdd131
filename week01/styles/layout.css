@@ -69,6 +69,10 @@ main .aside-content{
     grid-column: 3 / 4;
 }
 
+
+.profile-img{
+    width: 20%;
+}
 /* Footer */
 
 footer{
