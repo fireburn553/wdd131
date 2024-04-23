@@ -1,0 +1,123 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #1F192A;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 300px 1fr auto;
+}
+
+header{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+hr {
+    border: none; /* Remove default border */
+    height: 3px; /* Set desired line height */
+    background-color:#56995F; /* Set desired line color */
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+}
+
+header nav ul li {
+    flex: 1 1 auto;
+}
+
+header nav ul li a, main section div.web-dev ul li a{
+    text-decoration: underline;
+    text-decoration-color: #56995F;
+    transition: text-decoration 0.5s ease;
+    color: white;
+}
+
+header nav ul li a:hover, main section div.web-dev ul li a:hover {
+    text-decoration: transparent;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-column: 1/4;
+    max-width: 90%;
+    margin: 60px auto;
+    grid-gap: 20px;
+}
+
+main div.section-headings{
+    text-align: center;
+    background-color: #09390D;
+    margin: 0;
+    padding: 5px;
+}
+
+main img{
+    width: 60%;
+}
+
+main section.card{
+    background-color: rgba(255, 255, 255, 0.10);
+    color: white;
+}
+
+main section div.about-me{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 10px;
+}
+
+main section div.about-me div{
+    text-align: center;
+}
+
+main section div.web-dev{
+    margin: auto;
+}
+
+main section div.web-dev ul{
+    list-style-type: none;
+}
+
+main section div.web-dev ul li{
+    margin: 10px;
+}
+
+footer{ 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-column: 1/4;
+    background-color: #09390D;
+    text-align: center;
+    color: white;
+}
+
+footer div{
+    margin:auto;
+}
+
+footer div p:nth-child(1){
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+
+footer div #lastModified{
+    color: #F2A743;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
