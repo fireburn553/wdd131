@@ -16,8 +16,13 @@ body {
 }
 
 header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     grid-column: 1/4;
     text-align: center;
+    background-color: #1F192A;
 }
 
 hr {
@@ -36,14 +41,15 @@ header nav ul li {
     flex: 1 1 auto;
 }
 
-header nav ul li a, main section div.web-dev ul li a{
+header nav ul li a, main section div.web-dev ul li a, div.section-two p>a{
     text-decoration: underline;
     text-decoration-color: #56995F;
     transition: text-decoration 0.5s ease;
     color: white;
+    font-size: large;
 }
 
-header nav ul li a:hover, main section div.web-dev ul li a:hover {
+header nav ul li a:hover, main section div.web-dev ul li a:hover, div.section-two p>a:hover {
     text-decoration: transparent;
 }
 
@@ -54,6 +60,8 @@ main{
     max-width: 90%;
     margin: 60px auto;
     grid-gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 main div.section-headings{
@@ -74,12 +82,54 @@ main section.card{
 
 main section div.about-me{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
     margin: 10px;
+    grid-row-gap: 20px;
 }
 
-main section div.about-me div{
+div.section-one, div.section-two{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+    margin: auto;
+}
+
+div.section-one p{
+    grid-column: 1/3;
+    grid-row: 1/1;
+    margin: auto 20px;
+}
+
+div.section-one img{
+    grid-column: 3/4;
+    grid-row: 1/1;
+    width: 80%;
+    box-shadow: 10px 10px #56995F;
+    margin: 10px auto;
+    border-radius: 40px;
+}
+
+div.section-two-title{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+div.section-two-title h3{
+margin: 0;
+}
+
+div.section-two p{
+    grid-column: 2/4;
+    margin: auto 20px;
+}
+
+div.section-two figure{
+    grid-column: 1/2;
+}
+
+div.section-two figure img{
+    margin: 20px auto;
 }
 
 main section div.web-dev{
